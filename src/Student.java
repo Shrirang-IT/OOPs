@@ -6,6 +6,15 @@ public class Student {
     private String Branch;
 
 
+    public Student(){               //parameterized constructor called in empty constructor
+        this("Shrirang","Pune","IT");
+    }
+
+    public Student(String name,String city,String Branch ){
+        this.name=name;
+        this.city=city;
+        this.Branch=Branch;
+    }
     // getters
     public String getName() {
         return name;
