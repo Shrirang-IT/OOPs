@@ -1,47 +1,21 @@
 public class Student {
 
     private String name ;
-    private String city ;
-
-    private String Branch;
+    private  int  roll_no;
 
 
-    public Student(){               //parameterized constructor called in empty constructor
-        this("Shrirang","Pune","IT");
-    }
-
-    public Student(String name,String city,String Branch ){
-        this.name=name;
-        this.city=city;
-        this.Branch=Branch;
-    }
-    // getters
-    public String getName() {
-        return name;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public String getBranch() {
-        return Branch;
-    }
-
-    //setters
-    public void setName(String name) {
+    public Student(String name, int roll_no) {
         this.name = name;
+        this.roll_no = roll_no;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", roll_no=" + roll_no +
+                '}';
     }
-
-    public void setBranch(String branch) {
-        Branch = branch;
-    }
-
-
 
 
 }
