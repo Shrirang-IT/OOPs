@@ -17,5 +17,7 @@ public class Student {
                 '}';
     }
 
-
+void display(){
+        System.out.println("Hi Student");
+}
 }

@@ -1,7 +1,7 @@
 public class Customer {
 
-     String name;
-     String email;
+     private final String name;
+    private final String email;
 
      double creditLimit;
 
@@ -11,9 +11,16 @@ public class Customer {
         this.creditLimit = creditLimit;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", creditLimit=" + creditLimit +
+                '}';
+    }
 
-
-    public Customer(Customer x,String email, double creditLimit) {
+    public Customer(Customer x, String email, double creditLimit) {
             this(x.name,email,creditLimit);
     }
 

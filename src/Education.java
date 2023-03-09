@@ -17,4 +17,9 @@ public class Education extends Student {
                 ", percentage=" + percentage + super.toString()+
                 '}';
     }
+
+    void display(){
+
+        System.out.println("Hi Education");
+    }
 }

@@ -16,13 +16,20 @@ public class Main {
         Education education= new Education("Shrirang",1,"IT",89);
         display(education);
 
+        Apple apple =new Apple("Red","Sweet","Entire year");
+        System.out.println(apple);
+        apple.display();
 
+        Orange orange=new Orange("Orange","Sour","Winter","Has seeds");
+        System.out.println(orange);
+        orange.display();
     }
 
     public  static void display(Student student)
     {
         System.out.println("In display function");
         System.out.println(student);
+        student.display();
     }
 
 }
